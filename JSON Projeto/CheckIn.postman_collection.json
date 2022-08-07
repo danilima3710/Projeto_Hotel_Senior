@@ -1,0 +1,78 @@
+{
+	"info": {
+		"_postman_id": "14a704ce-833b-4501-bcac-8c8c934b2d7c",
+		"name": "CheckIn",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "FazerCheckIn",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nomeHospede\": \"Vilson\",\r\n    \"numeroHospede\": \"\",\r\n    \"documentoHospede\": \"\",\r\n\r\n    \"dataEntrada\": \"2022-08-04T08:00:00\",\r\n    \"dataSaida\": \"2022-08-07T10:22:00\",\r\n    \"adicionalVeiculo\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/hotel/FazerCheckIn",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"hotel",
+						"FazerCheckIn"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "HospedesNoHotel",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/hotel/HospedesNoHotel",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"hotel",
+						"HospedesNoHotel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "HospedeForaHotel",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/hotel/HospedesForaHotel",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"hotel",
+						"HospedesForaHotel"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

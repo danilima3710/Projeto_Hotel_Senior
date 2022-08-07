@@ -1,0 +1,148 @@
+{
+	"info": {
+		"_postman_id": "d2369b72-fe46-43cf-ac8e-acb5151ede99",
+		"name": "Hospedes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GravaHospede",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Vilson\",\r\n    \"numero\": \"996854776\",\r\n    \"documento\": \"12142518974\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/hotel/GravaHospede",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"hotel",
+						"GravaHospede"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BuscaHospedes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/hotel/BuscaHospedes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"hotel",
+						"BuscaHospedes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BuscaHospedeFiltro",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Daniel\",\r\n    \"numero\": \"\",\r\n    \"documento\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/hotel\\BuscaHospedeFiltro",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"hotel",
+						"BuscaHospedeFiltro"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AtualizaHospede",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nomeFiltro\": \"Vilson\",\r\n    \"numeroFiltro\": \"\",\r\n    \"documentoFiltro\": \"\",\r\n\r\n    \"nomeHospede\": \"Lima\",\r\n    \"numeroHospede\": \"12345678901\",\r\n    \"documentoHospede\": \"012345678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/hotel/AtualizaHospede",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"hotel",
+						"AtualizaHospede"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeletaHospede",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Daniel\",\r\n    \"numero\": \"\",\r\n    \"documento\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/hotel/DeletarHospede",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"hotel",
+						"DeletarHospede"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
