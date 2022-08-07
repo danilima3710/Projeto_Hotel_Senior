@@ -81,8 +81,6 @@ class CheckInTests {
 	void TestaAindaEstaNoHotelPadrao(){
 		LocalDateTime data = LocalDateTime.of(2018, 3, 14, 8,0);
 
-		System.out.println("Resultado" + LocalDateTime.now().compareTo(LocalDateTime.now()));
-
 		Assert.isTrue(ch.AindaEstaNoHotel(data) == false, "Resultado incorreto para a chamada da funcao AindaEstaNoHotel");
 	}
 
