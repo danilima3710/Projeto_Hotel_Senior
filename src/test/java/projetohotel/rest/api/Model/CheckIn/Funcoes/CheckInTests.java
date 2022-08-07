@@ -90,8 +90,6 @@ class CheckInTests {
 	void TestaAindaEstaNoHotelDataPosterior(){
 		LocalDateTime data = LocalDateTime.now().plusDays(2);
 
-		System.out.println("Resultado" + LocalDateTime.now().compareTo(LocalDateTime.now()));
-
 		Assert.isTrue(ch.AindaEstaNoHotel(data), "Resultado incorreto para a chamada da funcao AindaEstaNoHotel");
 	}
 }
